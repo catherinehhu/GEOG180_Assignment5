@@ -25,15 +25,6 @@ header{
     display: grid;
 }
 
-#contents{
-    grid-area: content;
-}
-
-#the_map{
-    height:80vh;
-    grid-area: main_map;
-}
-
 h1, h2{
     text-align: center;
 }
@@ -81,3 +72,21 @@ nav {
   width: 10%;
   border-radius: 10%;
  }
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  /* background-color: #f0f0f0; */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item iframe {
+  border: none;
+  margin-top: 10px;
+}
